@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         adapterReport = new ReportAdapter();
         binding.rvReports.setAdapter(adapterReport);
 
-        vehicleViewModel.getReportVehicle();
-
         binding.btnAddReport.setOnClickListener(v -> {
             CreateReportFragment createReportFragment = new CreateReportFragment();
             createReportFragment.show(getSupportFragmentManager(), "Create Report");
@@ -69,5 +67,11 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        vehicleViewModel.getReportVehicle();
     }
 }
