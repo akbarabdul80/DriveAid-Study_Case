@@ -1,0 +1,64 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'id.zero.driveaid'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "id.zero.driveaid"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation(libs.room.runtime)
+    annotationProcessor(libs.room.compiler)
+
+    implementation(libs.viewmodel)
+    implementation(libs.live.data)
+    implementation(libs.lifecycle.runtime)
+
+    implementation(libs.koin)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.retrofit.rxjava)
+
+    implementation(libs.rxjava)
+    implementation(libs.rxandroid)
+
+    implementation(libs.glide)
+
+    implementation(libs.easy.image)
+}

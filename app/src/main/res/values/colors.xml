@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#EE833E</color>
+    <color name="colorPrimarySec">#F89C60</color>
+    <color name="colorPrimaryDark">#B75D23</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryVariant">#FFFFFF</color>
+    <color name="colorPrimaryFaded">#C9E7FA</color>
+
+    <color name="softRed">#FF5A5F</color>
+    <color name="softRedFaded">#FF5A5F</color>
+
+    <color name="softGreen">#3DB73D</color>
+    <color name="softYellow">#DFB237</color>
+    <color name="softGray">#CECECE</color>
+
+    <color name="softGreenFaded">#00A699</color>
+
+    <color name="colorAccent">#CA6727</color>
+
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="colorOnBackground">#000000</color>
+
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnSecondaryVariant">#FFFFFF</color>
+
+    <color name="colorTertiary">#FFD600</color>
+    <color name="colorOnTertiary">#000000</color>
+
+    <color name="colorGrayEdiText">#E9E9EA</color>
+
+    <color name="TextColorDefault">#353535</color>
+    <color name="TextColorBlank">#888888</color>
+    <color name="TextColorInactive">#D1D6DE</color>
+
+    <color name="colorActive">#F67E94</color>
+    <color name="colorActiveDark">#FB6B85</color>
+    <color name="ShimmerColor">#C2C2C2</color>
+
+    <color name="green_success">#19A149</color>
+    <color name="invert_color">@color/TextColorDefault</color>
+    <color name="toggle_on">@color/green_success</color>
+</resources>

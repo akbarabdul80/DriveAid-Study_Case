@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DriveAid" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.DriveAid" parent="Base.Theme.DriveAid" >
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondaryContainer" tools:targetApi="s">@color/colorPrimary</item>
+        <item name="colorOnSurface">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSurface">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+</resources>
